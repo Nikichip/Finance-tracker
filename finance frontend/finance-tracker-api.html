@@ -108,11 +108,11 @@
     <div class="form-row">
       <div class="form-group">
         <label>Category</label>
-        <select id="txn-cat"></select>
+        <select id="txn-cat" aria-label="Category"></select>
       </div>
       <div class="form-group">
         <label>Date</label>
-        <input type="date" id="txn-date" />
+        <input type="date" id="txn-date" aria-label="Transaction date">
       </div>
     </div>
     <button class="add-btn" onclick="addTransaction()">Add Transaction</button>
@@ -140,7 +140,7 @@
 // ─────────────────────────────────────────────────────────────────
 // CONFIG — update this after you deploy your backend
 // ─────────────────────────────────────────────────────────────────
-const API = 'https://your-backend.onrender.com';
+const API = 'https://finance-tracker-api-y25p.onrender.com';
 
 // ─────────────────────────────────────────────────────────────────
 // AUTH HELPERS  (token lives in localStorage — only the token, not data)
